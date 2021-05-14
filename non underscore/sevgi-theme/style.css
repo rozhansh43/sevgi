@@ -1,0 +1,709 @@
+/*
+
+Theme Name: sevgi
+
+Theme URI: https://sevgi.ir
+
+Author: the WordPress team
+
+Author URI: https://wordpress.org/
+
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+
+Version: 1.3
+
+Requires at least: 5.0
+
+Tested up to: 5.4
+
+Requires PHP: 7.0
+
+License: GNU General Public License v2 or later
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain: twentytwenty
+
+This theme, like WordPress, is licensed under the GPL.
+
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+@import url(assets/css/iransans-style.css);
+:root {
+    --red: red;
+}
+
+body {
+    background-color: #F9F4F1;
+}
+
+header .Circle {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+/* BackGrounds */
+
+.bg-olive {
+    background-color: #A5A791;
+}
+
+.bg-kerem {
+    background-color: #F6EEE7;
+}
+
+.bg-kerem-tire {
+    background-color: #D8C5B6;
+}
+
+.bg-yellow-c {
+    background-color: #FFF7D6;
+}
+
+.rounded-40 {
+    border-radius: 40px;
+}
+
+.rounded-30 {
+    border-radius: 30px;
+}
+
+header a {
+    color: #1A3D59;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #FAB727;
+}
+
+.header-search .input-group {
+    border-radius: 45px;
+    background-color: #E5E5E2;
+}
+
+.header-search .input-group input,
+.header-search .input-group input:focus,
+.header-search .btn-check:focus+.btn,
+.btn:focus {
+    border: unset;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.menu-right .menu-item {
+    background-color: #D8C5B6;
+}
+
+.menu-right ul {
+    padding-right: 0;
+}
+
+.menu-right ul li {
+    padding: 1.446rem 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu-right .menu-item:nth-last-child(1) {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.menu-right .menu-item:nth-child(1) {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.menu-right ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(26, 61, 89, 0.3);
+}
+
+.menu-right .menu-item {
+    transition: ease-in-out .3s;
+}
+
+.menu-right .menu-item a {
+    transition: ease-in-out .3s;
+}
+
+.menu-right .menu-item:hover {
+    background-color: #ab9686;
+}
+
+.menu-right .menu-item:hover a {
+    color: #1a3d59;
+}
+
+.menu-right a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    font-size: 20px;
+}
+
+#main-title h1 {
+    font-size: xxx-large;
+}
+
+.gallery div img {
+    box-shadow: unset;
+    transition: .3s ease-in-out;
+}
+
+.gallery div:hover img {
+    box-shadow: 0 10px 34px 1px #ba4e27;
+}
+
+.product-slider .item {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-slider .slider-item {
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    padding: 22px;
+    text-align: center;
+}
+
+.product-slider .slider-item:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+    filter: blur(30px);
+    margin: -80px;
+}
+
+.product-slider .item {
+    display: block;
+}
+
+.slider-item-details h3 {
+    font-size: 20px;
+    margin-top: 20px !important;
+    font-weight: normal;
+    color: #201B15;
+}
+
+.slider-item-details span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #201B15;
+}
+
+.slider-item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-item-img div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #395B50;
+    color: white;
+    padding: 15px;
+    border-bottom-right-radius: 40px;
+}
+
+.product-slider a {
+    text-decoration: none;
+}
+
+.slider-item-img div a {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.slider-item-img div a:hover {
+    color: #FAB727;
+}
+
+.product-slider h2,
+.product-slider hr {
+    color: white;
+}
+
+.product-slider hr {
+    margin: 30px 0 80px 0;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    background: unset !important;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: unset !important;
+    color: #eee !important;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    right: -60px;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    left: -40px;
+}
+
+.shadow-10 {
+    box-shadow: 0 1px 10px #DEDCDB;
+}
+
+.shadow-12 {
+    box-shadow: 0 2px 12px #F6F6F4;
+}
+
+
+/*
+
+.custom-product .col-md-3{
+
+    width: 176px;
+
+    height: 176px;
+
+}*/
+
+.img-thumbnail {
+    background-color: #1A3D59;
+}
+
+footer {
+    background-color: #A5A791;
+}
+
+.copyright {
+    background-color: #1A3D59;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #FAB727;
+}
+
+
+/*shop*/
+
+.shop-hedear-img img {
+    width: 100%;
+}
+
+
+/*single product*/
+
+:root {
+    --bgcolor: #F9F4F1;
+    --btn: #00C6B6;
+    --btn-hover: #02AFA1;
+    --btn-clicked: #01948A;
+    --cream: #d8c5b6;
+    --white: #ffff;
+}
+
+.p-fontsize {
+    font-size: 20px;
+}
+
+.lineheight-1 {
+    line-height: 1.5;
+}
+
+.rounded-40 {
+    border-radius: 40px;
+}
+
+.single-prod-img img {
+    /*width: 100%;*/
+    border-radius: 40px;
+}
+
+.shop-quantity .favorites {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    width: 61px;
+    border-radius: 22px;
+    border: none;
+}
+
+.shop-quantity .favorites:focus {
+    background-color: var(--btn-clicked);
+}
+
+.shop-quantity .favorites:hover {
+    background-color: var(--btn-hover);
+}
+
+.shop-quantity .input-group {
+    width: 120px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-quantity .input-group button {
+    border: none;
+}
+
+.shop-quantity .input-group .form-control {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.add-to-mycart button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px 31px;
+    width: fit-content;
+    border-radius: 22px;
+    border: none;
+}
+
+.add-to-mycart button:focus {
+    background-color: var(--btn-clicked);
+}
+
+.add-to-mycart button:hover {
+    background-color: var(--btn-hover);
+}
+
+.colors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.colors li {
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+.colors label {
+    cursor: pointer;
+}
+
+.colors input {
+    display: none;
+}
+
+.colors input[type="radio"]:checked+.swatch {
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.swatch {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px 0 0;
+    border-radius: 40px;
+    border: 1px solid #d4d4d4;
+}
+
+.about-our-product {
+    background-color: var(--cream);
+    color: var(--white);
+    padding: 56px;
+    text-align: justify;
+}
+
+.prod-comment-box {
+    background-color: var(--white);
+    padding: 50px;
+}
+
+.modal-content {
+    width: 89%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.modal-footer button {
+    margin: auto;
+    font-size: 28px;
+}
+
+.yourname {
+    height: 50px;
+}
+
+.comment-section textarea,
+input {
+    background-color: var(--bgcolor);
+    border: none;
+    box-shadow: inset 3px 3px 5px 2px rgb(230, 230, 230);
+}
+
+.comment-section .opinion-btn {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    width: 200px;
+    border-radius: 22px;
+    border: none;
+    margin: auto;
+}
+
+.product-carousel {
+    direction: ltr;
+}
+
+.product-carousel .item img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+
+/*.owl-nav {*/
+
+
+/*    font-size: 50px;*/
+
+
+/*    position: relative;*/
+
+
+/*    bottom: 60%;*/
+
+
+/*}*/
+
+
+/*.owl-prev {*/
+
+
+/*    position: absolute;*/
+
+
+/*    left: -4%;*/
+
+
+/*}*/
+
+
+/*.owl-next {*/
+
+
+/*    position: absolute;*/
+
+
+/*    top: 50%;*/
+
+
+/*    right: -4%;*/
+
+
+/*}*/
+
+.owl-item img {
+    border-radius: 40px;
+}
+
+@media only screen and (max-width:800px) {
+    .about-our-product {
+        padding: 30px;
+        width: 95%;
+        margin: auto;
+    }
+    .prod-comment-box {
+        padding: 30px;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+
+/* articles archive  */
+
+.article-archive .card {
+    margin: 10px;
+    border-top-left-radius: 46px !important;
+    border-bottom-right-radius: 46px !important;
+    border-bottom-left-radius: 46px !important;
+}
+
+.article-archive .card img {
+    border-top-left-radius: 46px!important;
+    border-bottom-right-radius: 46px !important;
+    box-shadow: 3px 3px 5px 2px rgb(190, 189, 189);
+}
+
+
+/*404 style*/
+
+.back-to-home button {
+    background-color: #00C6B6;
+    color: white;
+    border: none;
+    width: auto;
+    margin: auto;
+    padding: 10px 39px;
+    border-radius: 7px;
+}
+
+
+/*about us style*/
+
+.page-id-21 .the-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.page-id-21 .the-content p {
+    line-height: 2.5;
+}
+
+
+/*contact us style*/
+
+.page-id-19 .the-content {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.page-id-19 .contact-us .phone-picture img {
+    width: 100%;
+}
+
+.page-id-19 .contact-number img {
+    width: 220px;
+    /*background-image: url("./images/Group 150.png");*/
+}
+
+.page-id-19 .contact-number {
+    position: relative;
+}
+
+.page-id-19 .contact-number p {
+    position: absolute;
+    bottom: 13px;
+    right: 24%;
+    width: 20%;
+}
+
+
+/*responsive menu*/
+
+.responsive-menu nav {
+    background: #F9F4F1;
+    color: #1A3D59;
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsive-menu nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+.responsive-menu nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1A3D59;
+    font-size: 1.5rem;
+}
+
+.responsive-menu nav .mainMenu li a:hover {
+    color: #1A3D59;
+}
+
+.responsive-menu nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.responsive-menu nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    .responsive-menu nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+    .responsive-menu nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .responsive-menu nav .openMenu {
+        display: block;
+    }
+    .responsive-menu nav .mainMenu li a:hover {
+        background: none;
+        font-size: 1.6rem;
+    }
+}
+
+.header-responsive-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-responsive-logo .logo {
+    width: auto;
+}
+
+.register-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brown-border {
+    border: 1px solid lightgrey;
+}
