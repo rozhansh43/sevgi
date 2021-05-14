@@ -1,0 +1,220 @@
+
+:root {
+    --bgcolor: #F9F4F1;
+    --btn: #00C6B6;
+    --btn-hover: #02AFA1;
+    --btn-clicked: #01948A;
+    --cream: #d8c5b6;
+    --white: #ffff;
+
+
+}
+
+.p-fontsize {
+    font-size: 20px;
+}
+
+.lineheight-1 {
+    line-height: 1.5;
+}
+
+.rounded-40 {
+    border-radius: 40px;
+}
+
+.single-prod-img img {
+    width: 100%;
+
+}
+
+.shop-quantity .favorites {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    width: 61px;
+    border-radius: 22px;
+    border: none;
+}
+
+.shop-quantity .favorites:focus {
+    background-color: var(--btn-clicked);
+}
+
+.shop-quantity .favorites:hover {
+    background-color: var(--btn-hover);
+}
+
+.shop-quantity .input-group {
+    width: 120px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-quantity .input-group button {
+    border: none;
+}
+
+.shop-quantity .input-group .form-control {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.add-to-mycart button {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px 31px;
+    width: fit-content;
+    border-radius: 22px;
+    border: none;
+}
+
+.add-to-mycart button:focus {
+    background-color: var(--btn-clicked);
+}
+
+.add-to-mycart button:hover {
+    background-color: var(--btn-hover);
+}
+
+.colors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.colors li {
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+.colors label {
+    cursor: pointer;
+}
+
+.colors input {
+    display: none;
+}
+
+.colors input[type="radio"]:checked+.swatch {
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.swatch {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px 0 0;
+    border-radius: 40px;
+    border: 1px solid #d4d4d4;
+}
+
+.about-our-product {
+    background-color: var(--cream);
+    color: var(--white);
+    padding: 56px;
+    text-align: justify;
+}
+
+.prod-comment-box {
+    background-color: var(--white);
+    padding: 50px;
+}
+
+.modal-content {
+    width: 89%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.modal-footer button {
+    margin: auto;
+    font-size: 28px;
+}
+
+.yourname {
+    height: 50px;
+}
+
+.comment-section textarea,
+input {
+    background-color: var(--bgcolor);
+    border: none;
+    box-shadow: inset 3px 3px 5px 2px rgb(230, 230, 230);
+}
+
+.comment-section .opinion-btn {
+    background-color: var(--btn);
+    color: var(--white);
+    padding: 10px;
+    width: 200px;
+    border-radius: 22px;
+    border: none;
+    margin: auto;
+}
+
+.product-carousel {
+    direction: ltr;
+}
+
+.product-carousel .item img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.owl-nav {
+    font-size: 50px;
+    position: relative;
+    bottom: 60%;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -4%;
+}
+
+.owl-next {
+    position: absolute;
+    top: 50%;
+    right: -4%;
+}
+
+@media only screen and (max-width:800px) {
+    .about-our-product {
+        padding: 30px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .prod-comment-box {
+        padding: 30px;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+/* articles archive  */
+.article-archive .card {
+    margin: 10px;
+    border-top-left-radius: 46px !important;
+    border-bottom-right-radius: 46px !important;
+    border-bottom-left-radius: 46px !important;
+    
+
+}
+
+.article-archive .card img {
+    border-top-left-radius: 46px!important;
+    border-bottom-right-radius: 46px !important;
+    box-shadow:  3px 3px 5px 2px rgb(190, 189, 189);
+    
+}
+
